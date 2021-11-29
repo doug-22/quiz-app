@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const Modal = ({id = "modal", onClose = () => {}}) => {
@@ -11,7 +12,9 @@ const Modal = ({id = "modal", onClose = () => {}}) => {
         <div id={id} className="modal">
             <div className="modal-container">
                 <div className="modal-buttons">
-                    <button className="button-start">Start</button>
+                    <Link to="/home">
+                        <button className="button-start">Start</button>
+                    </Link>
                     <button className="button-cancel" onClick={onClose}>Cancel</button>
                 </div>
             </div>

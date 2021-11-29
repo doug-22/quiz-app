@@ -1,21 +1,22 @@
 import React, { useState } from "react";
+
 import "./style.css";
 
 import Modal from "../../Components/Modal";
+import Home from "../Home";
 
 const Main = () => {
 
     const [value, setValue] = useState(1)
     const handleInputChange = (e) => {
         setValue(e.target.value);
+        localStorage.setItem("qtdQuestoes", e.target.value);
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData);
-
-        console.log(data.number);
     };
 
     const [modalVisible, setModalVisible] = useState(false);
