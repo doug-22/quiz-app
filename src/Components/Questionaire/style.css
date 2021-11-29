@@ -1,0 +1,16 @@
+.content-title{
+    max-width: 60vw;
+    background-color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.content-buttons{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
