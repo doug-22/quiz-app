@@ -20,8 +20,9 @@
     cursor: pointer;
     font-size: 15px;
     border: solid 2px #2251f9;
+    background-color: #fff;
+    color: #111;
     border-radius: 10px;
-    background-color: #ddd9ce;
     margin-bottom: 10px;
     transition: all ease 0.2s;
 }

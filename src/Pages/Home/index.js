@@ -53,9 +53,7 @@ const Home = () => {
       }
       
     return ( gameEnded ? (
-        <div>
-            <Modal sendData={() => sendData()} />
-        </div>
+        <Modal sendData={() => sendData()} />
         ):
         <>
             <div className="container-home">

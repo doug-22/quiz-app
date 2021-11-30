@@ -21,7 +21,7 @@ const Modal = ({id = "modal", onClose = () => {}, location, sendData = () => {}}
                 : 
                     <div className="modal-buttons">
                         <Link to="/report">
-                            <button className="button-start" onClick={() => sendData()}>Finalizar</button>
+                            <button className="button-start" onClick={() => sendData()}>Finish</button>
                         </Link>
                     </div>
                 }

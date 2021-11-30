@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import { Route, BrowserRouter, Routes} from "react-router-dom"
 
 import Main from "./Pages/Main";

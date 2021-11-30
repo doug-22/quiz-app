@@ -5,7 +5,7 @@ const Api = async (endpoint) => {
     const json = await req.json();
     return json;
 }
-
+ // eslint-disable-next-line
 export default {
     getQuestions: async (qtdQuestions) => {
         return {

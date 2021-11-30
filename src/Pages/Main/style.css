@@ -34,3 +34,12 @@ button{
     box-shadow: 3px 3px lightgray;
     cursor: pointer;
 }
+
+.button-previous{
+    color: #2251f9;
+    background-color: #fff;
+    border: solid 2px #2251f9;
+    font-weight: bold;
+
+    margin-top: 100px;
+}

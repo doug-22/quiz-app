@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -16,6 +16,7 @@ const Main = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
+         // eslint-disable-next-line
         const data = Object.fromEntries(formData);
     };
 
@@ -23,14 +24,22 @@ const Main = () => {
 
     const location = useLocation();
 
+    const questionsLocalStorage = JSON.parse(localStorage.getItem("questionsClicked"));
+
     return (
         <div className="container">
             <h2>How many questions do you want to answer?</h2>
             <form onSubmit={handleSubmit} className="buttons">
                 <input type="number" name="number" min="1" onChange={handleInputChange} value={value}/>
-                <button type="submit" onClick={() => setModalVisible(true)}>START</button>
+                <button type="submit" onClick={() => setModalVisible(true)}>Start</button>
             </form>
             {modalVisible ? <Modal onClose={() => setModalVisible(false)} location={location.pathname}/> : null}
+            {questionsLocalStorage && 
+                <Link to="/report">
+                    <button className="button-previous">Previous result</button>
+                </Link>
+            }
+            
         </div>
     );
 }
