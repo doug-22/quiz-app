@@ -25,7 +25,7 @@ const Main = () => {
 
     return (
         <div className="container">
-            <h2>Quantas questões você deseja responder?</h2>
+            <h2>How many questions do you want to answer?</h2>
             <form onSubmit={handleSubmit} className="buttons">
                 <input type="number" name="number" min="1" onChange={handleInputChange} value={value}/>
                 <button type="submit" onClick={() => setModalVisible(true)}>START</button>

@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(70,133,189,0.6);
 
     display: flex;
     justify-content: center;
@@ -14,9 +14,10 @@
 
 .modal-container{
     width: 30%;
-    height: 40%;
+    height: 30%;
     background-color: #fff;
     color: #111;
+    box-shadow: 3px 3px rgb(168, 168, 168);
 }
 
 .modal-buttons{
@@ -24,45 +25,32 @@
     height: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.button-start {
-    background-color: #00bd15;
-    border: solid 2px #111;
-    border-radius: 15px;
+.continue{
+    color: #2251f9;
+    margin-bottom: 5px;
+}
+
+.button-start, .button-cancel {
+    background-color: #fff;
+    color: #2251f9;
+    border: solid 2px #2251f9;
+    border-radius: 5px;
     outline: none;
     cursor: pointer;
     width: 100px;
-    height: 50px;
-    font-size: 20px;
+    height: 30px;
+    font-size: 15px;
     margin-right: 10px;
     transition: all ease 0.2s;
 }
-.button-start:hover {
-    background-color: #019212;
+.button-start:hover, .button-cancel:hover {
+    background-color: lightgray;
 }
-
-.button-cancel {
-    background-color: #db302f;
-    border: solid 2px #111;
-    border-radius: 15px;
-    outline: none;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    margin-left: 10px;
-    transition: all ease 0.2s;
-}
-
-.button-cancel:hover {
-    background-color: #af2727;
-}
-
-
-
 
 
 @media (max-width: 760px) {
