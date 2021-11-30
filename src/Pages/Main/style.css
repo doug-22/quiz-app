@@ -7,9 +7,30 @@
     align-items: center;
 }
 
+.container h2 {
+    color: #2251f9;
+}
+
 .buttons{
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+input{
+    border: solid 2px #2251f9;
+
+}
+
+button{
+    width: 300px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #2251f9;
+
+    box-shadow: 3px 3px lightgray;
+    cursor: pointer;
 }
