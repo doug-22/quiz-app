@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import { Route, BrowserRouter, Routes} from "react-router-dom"
-import Api from "./api";
 
 import Main from "./Pages/Main";
 import Home from "./Pages/Home";
