@@ -30,3 +30,10 @@
 .button:hover{
     background-color: lightgray;
 }
+
+@media screen and (max-width: 760px) {
+    .content-title{
+        max-width: 100%;
+        text-align: center;
+    }
+}
