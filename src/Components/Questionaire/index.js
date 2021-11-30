@@ -13,9 +13,8 @@ const Questionaire = ({handleAnswer, data: {question, correct_answer, incorrect_
             </div>
             <div className="content-buttons">
                 {shuffledAnswers.map((answer, key) => (
-                    <button key={key} className="button" onClick={() => handleAnswer(answer)}>
-                        {answer}  
-                    </button>
+                    <button key={key} className="button" onClick={() => handleAnswer(answer)}
+                        dangerouslySetInnerHTML={{ __html: answer }}/>
                 ))}
             </div>
         </div>
