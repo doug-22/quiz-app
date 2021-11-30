@@ -8,6 +8,9 @@ import Questionaire from "../../Components/Questionaire";
 const Home = () => {
 
     const [questions, setQuestions] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
+    const questionsClicked = questions
 
     useEffect(() => {
         
@@ -20,11 +23,21 @@ const Home = () => {
         loadApi();
       }, []);
 
+      const handleAnswer = (answer) => {
+        if(questionsClicked.length > 0){
+            questionsClicked[currentIndex]['clicked_answer'] = answer
+          }
+          
+        setCurrentIndex(currentIndex + 1);
+
+      }
+      
+      
     return (
         <div className="container-home">
             {questions.length > 0 ? 
             <>
-                <Questionaire data={questions[0]} />
+                <Questionaire data={questions[currentIndex]} handleAnswer={handleAnswer}/>
             </>
             :
             <h2>Carregando...</h2>}
