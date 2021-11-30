@@ -17,7 +17,7 @@ const Home = () => {
     useEffect(() => {
         
         const loadApi = async () => {
-            let qtdQuestions = parseInt(localStorage.getItem("qtdQuestoes"));
+            let qtdQuestions = parseInt(localStorage.getItem("amountQuestions"));
             let list = await Api.getQuestions(qtdQuestions);
             setQuestions(list.questions.results)
         }

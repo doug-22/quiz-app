@@ -10,7 +10,7 @@ const Main = () => {
     const [value, setValue] = useState(1)
     const handleInputChange = (e) => {
         setValue(e.target.value);
-        localStorage.setItem("qtdQuestoes", e.target.value);
+        localStorage.setItem("amountQuestions", e.target.value);
     }
 
     const handleSubmit = (e) => {
