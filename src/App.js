@@ -4,6 +4,7 @@ import Api from "./api";
 
 import Main from "./Pages/Main";
 import Home from "./Pages/Home";
+import Report from "./Pages/Report";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/home" element={<Home />}/>
+        <Route path="/report" element={<Report />}/>
       </Routes>
     </BrowserRouter>
   );
