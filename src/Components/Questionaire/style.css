@@ -8,9 +8,24 @@
 }
 
 .content-buttons{
-    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.button {
+    width: 60%;
+    height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: violet;
+
+    margin-bottom: 10px;
+}
+
+.correctAnswer {
+    background-color: yellowgreen;
 }

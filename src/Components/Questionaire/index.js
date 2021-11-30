@@ -1,12 +1,10 @@
 import React from "react";
 import "./style.css";
 
-import Button from "../Button";
 
 const Questionaire = ({handleAnswer, data: {question, correct_answer, incorrect_answers}}) => {
     
-    const shuffledAnswer = [correct_answer, ...incorrect_answers].sort();
-    console.log(shuffledAnswer);
+    const shuffledAnswers = [correct_answer, ...incorrect_answers].sort();
     
     return(
         <div>
@@ -14,10 +12,11 @@ const Questionaire = ({handleAnswer, data: {question, correct_answer, incorrect_
                 <h2 dangerouslySetInnerHTML={{ __html: question }} />
             </div>
             <div className="content-buttons">
-                <Button className={correct_answer === shuffledAnswer[0] ? "correctAnswer" : ""} onClick={() => handleAnswer(shuffledAnswer[0])} answer={shuffledAnswer[0]} />
-                <Button className={correct_answer === shuffledAnswer[1] ? "correctAnswer" : ""} onClick={() => handleAnswer(shuffledAnswer[1])} answer={shuffledAnswer[1]}/>
-                <Button className={correct_answer === shuffledAnswer[2] ? "correctAnswer" : ""} onClick={() => handleAnswer(shuffledAnswer[2])} answer={shuffledAnswer[2]}/>
-                <Button className={correct_answer === shuffledAnswer[3] ? "correctAnswer" : ""} onClick={() => handleAnswer(shuffledAnswer[3])} answer={shuffledAnswer[3]}/>
+                {shuffledAnswers.map((answer, key) => (
+                    <button key={key} className={`button ${correct_answer === answer ? "correctAnswer" : ""}`} onClick={() => handleAnswer(answer)}>
+                        {answer}  
+                    </button>
+                ))}
             </div>
         </div>
         
