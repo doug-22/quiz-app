@@ -1,6 +1,5 @@
 .content-title{
     max-width: 60vw;
-    background-color: #fff;
     padding: 5px 10px;
     display: flex;
     justify-content: center;
@@ -18,14 +17,15 @@
     width: 60%;
     height: 50px;
     outline: none;
-    border: none;
     cursor: pointer;
     font-size: 15px;
-    background-color: violet;
-
+    border: solid 2px #2251f9;
+    border-radius: 10px;
+    background-color: #ddd9ce;
     margin-bottom: 10px;
+    transition: all ease 0.2s;
 }
 
-.correctAnswer {
-    background-color: yellowgreen;
+.button:hover{
+    background-color: lightgray;
 }

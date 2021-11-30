@@ -1,9 +1,9 @@
 .report-container{
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: #ddd9ce;
 }
 
 .report-top{
@@ -76,7 +76,7 @@
     background-color: #b3e69c;
     font-weight: bold;
 
-    box-shadow: 5px 5px lightgray;
+    box-shadow: 5px 5px rgb(170, 170, 170);
 }
 
 .question-clicked, .question-correct{
@@ -89,7 +89,7 @@
     justify-content: center;
     align-items: center;
 
-    box-shadow: 5px 5px lightgray;
+    box-shadow: 5px 5px rgb(170, 170, 170);
 }
 
 .wrong {
