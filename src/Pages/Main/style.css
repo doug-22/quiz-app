@@ -36,6 +36,10 @@ button{
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #1c40c4;
+}
+
 .button-previous{
     color: #2251f9;
     background-color: #fff;
@@ -43,4 +47,8 @@ button{
     font-weight: bold;
 
     margin-top: 100px;
+}
+
+.button-previous:hover {
+    background-color: lightgray;
 }

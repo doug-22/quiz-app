@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
+import home from "../../Assets/home-alt.svg";
 
 const Report = () => {
 
@@ -9,7 +11,8 @@ const Report = () => {
     return (
         <div className="report-container">
             <div className="report-top">
-                <div>Result: </div>
+                <Link to="/"><button className="button-home"><img src={home} alt="go home"/></button></Link>
+                <h1>Result: </h1>
                 <div className="top-result">
                     <div>{score} correct!</div>
                     <div>{questions.length - score} wrong!</div>

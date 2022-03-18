@@ -5,7 +5,7 @@
 }
 
 .report-top{
-    width: 40%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,19 +13,15 @@
     margin: 50px 0 30px;
 }
 
-.report-top div:nth-child(1){
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .top-result {
+    width: 200px;
     display: inline-flex;
+    justify-content: space-between;
 }
 
 .top-result div:nth-child(n){
     font-size: initial;
     font-weight: initial;
-    margin-right: 20px;
 }
 
 .report-content-questions{
@@ -92,4 +88,14 @@
 
 .wrong {
     background-color: #ed9c9c;
+}
+
+.button-home {
+    width: 50px;
+    background-color: white;
+    border: solid 2px #2251f9;
+}
+
+.button-home:hover {
+    background-color: lightgray;
 }
